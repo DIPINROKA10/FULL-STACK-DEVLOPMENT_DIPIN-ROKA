@@ -1,75 +1,175 @@
 <html>
-<head>
-    <title>
-Travel Registration Form 
+    <head>
+<title>Travel Reg Form</title>
+       <style>
 
-    </title>
+        fieldset{
+            padding-top:20px;
+            padding-bottom:20px;
+            margin: 20px;
+            border-radius: 10px ;
+            box-shadow: 2px 2px 4px black;
+            background: linear-gradient(rgb(24, 24, 192),gray,rgb(81, 135, 81));
+            
+            
+        }
+        legend{
+            text-align: center;
 
-</head>
+        }
+        
+        input{
+            height: 28px;
+            background-color: rgb(113, 137, 217);
+            border: none;
+            border-radius: 10px;
 
-<style>
-
-body{
-
-    padding-left: 20px;
-    text-align: center;
-}
-
-
-
-    legend{
-        text-align: center;
-    }
-
-</style>
-
-<body>
-    <form>
-   <fieldset>
-       <legend>
-  <b>  Travel Reg Form</b>
-   </legend>
-   <label>From:</label>
-  <input type="text" placeholder="Enter Your From City" required><br>
-  <label>To:
-  </label>
-  <input type="text" placeholder="Enter Your To City" required><br>
-  <label>Date OF travelling:</label>
-  <input type="date" required></br>
-  <label>First Name :</label>
-  <input type="text" required><br>
-  <label>Last Name :</label>
-  <input type="text"><br>
-  <label>Gender:</label>
- Male <input type="radio"  name="Gender",value="Male" required>
- Female <input type="radio" name="Gender" value="Female"required> 
- Others <input type="radio"  name="Gender"value="Others"required><br>
- <label>Age:</label>
- <input type="number" required><br>
- <label>Phone no</label>
- <input type="number" required><br>
- <label>Email:</label>
- <input type="text" required><br>
- <label>Password</label>
-<input type="password"required><br>
-
-<button>Register</button>
+        }
 
 
+        label,input{
+        
+            margin-left:1%;
+            margin-bottom:1%;
+        }
+        .l1{
+            padding-left : 300px;
+            width: 280px;
+            
+        }
+        .i1,.l1{
+            margin-bottom: 1%;
+        
+        }
+        .l2{
+             padding-left:300px;
+        
+            
+        }
+        .i2{
+             width: 315px;
+        }
+        .i2,.l2{
+            margin-bottom: 1%;
+        }
+        .l3{
+
+            padding-left : 300px;
+            
+            
+        }
+        .i3,.l3{
+            margin-bottom: 1%;
+            width: 365px;
+        }
+        .l4{
+            padding-left : 300px;
+            
+        }
+        .i4,.l4{
+            margin-bottom: 1%;
+            width: 365px;
+        }
+        .l5{
+            padding-left : 300px;
+            width: 365px;
+        }
+        .i5,.l5{
+            margin-bottom: 1%;
+        }
+        .l6{
+            padding-left : 300px;
+            width: 365px;
+           
+        }
+        .i6,.l6{
+            margin-bottom: 1%;
+             width: 310px;
+             margin-left: 30px;
 
 
-   </fieldset>
+        }
+        .l7{
+            padding-left : 300px;
+            
+        }
+        .i7,.l7{
+            margin-bottom: 1%;
+            width: 355px;
+        }
+        .l8{
+            padding-left : 300px;
+        }
+        .i8,.l8{
+            margin-bottom: 1%;
+            width: 370px;
+        
+        }
+      
+        .l9{
+            margin-left: 40%;
+            margin-bottom: 1%;
+            
+        }
+
+
+
+        select{
+            
+            margin-left: 310;
+            margin-bottom: 15px;
+            width: 449;
+            height: 40px;
+            background-color: rgb(192, 244, 248);
+            border: none;
+            border-radius: 10px;
+            
+        }
+
+        button{
+            background-color: rgb(198, 148, 21);
+            padding-left: 20px;
+            width: 200px;
+            
+        }
+
+       
+
+       </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+        <legend><b>Travel Reg Form</b></legend>
+        <select>
+            <option>--Select--</option>
+            <option>Bus</option>
+            <option>Train</option>
+            <option>Flight</option>
+        </select><br>
+<label class="l1">From:</label>
+<input type="text" placeholder="Enter your source" required>
+<label class="i1">To:</label>
+<input type="text" placeholder="Enter your destination" required><br>
+<label class = "l2">Date of travelling :</label>
+<input type="date"class="i2" required><br>
+<label class="l3">First Name</label>
+<input type="text" class="i3" required><br>
+<label class="l4">Last Name</label>
+<input type="text" class="i4" required> <br>
+<label class="l5">Gender : </label>
+<input class = "i5" type="radio"  name = "gender"  value="male" required>Male
+ <input class="i5" type="radio" name = "gender" value="female" required>Female
+ <input  class ="i5" type="radio" name = "gender" value="others" required>Others <br>
+<label class="l6" >Age : </label>
+<input type="number" class="i6" required> <br>
+<label class="l7" >Contact No.</label>
+<input type="number" class="i7" required> <br>
+<label class="l8">Email ID</label>
+<input type="text" class="i8"> <br>
+<button class="l9">Register IN</button>
+
+    </fieldset>
     </form>
-
-  
-
-</body>
-
-</html>
-
-
-<!--
-
-work of the day is to make all this in center 
-
--->
+    </body>
+    <html>
