@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>Event Handlers in JS</title>
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial;
+        }
+
+        .login-box {
+            width: 320px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-left: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 95%;
+            padding: 8px;
+            margin: 8px 0 15px 0;
+            border: 1px solid #aaa;
+        }
+
+        button {
+            padding: 8px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-box">
+        <h1>Login</h1>
+
+        <label>Username :</label>
+        <input type="text" id="username">
+
+        <label>Password :</label>
+        <input type="password" id="password">
+
+        <button onclick="login()">Login</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function login() {
+            var uname = document.getElementById("username").value;
+            var pwd = document.getElementById("password").value;
+
+            if (uname == "Dipin" && pwd == "2345") {
+                document.getElementById("result").innerHTML = "Login Successful";
+                document.getElementById("result").style.color = "green";
+            } else {
+                document.getElementById("result").innerHTML = "Login Failed";
+                document.getElementById("result").style.color = "red";
+            }
+        }
+    </script>
+
+</body>
+</html>
